@@ -1,4 +1,5 @@
 FROM fedora:latest
+#Pulls latest Fedora image from registry.
 RUN dnf install -y nginx hostname tuxpaint \
     && dnf clean all
     #Installs nginx, hostname and tuxpaint packages and creates a /data directory
